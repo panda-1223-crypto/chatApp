@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fafafa;
+}
+
+h1 {
+    text-align: center;
+    margin: 80px auto;
+}
+/* チャット全体 */
+
+#chat {
+    width: 70%;
+    min-height: 450px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    height: 450px;
+    overflow-y: auto;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.clear-link {
+    display: block;
+    width: 70%;
+    margin: 20px auto; /* 上下に少し余白 */
+    text-align: right; /* 右寄せ */
+    color: indianred;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.clear-link:hover {
+   text-decoration: underline;
+}
+
+
+.inputText {
+    margin: 90px auto;
+    text-align: center;
+}
+
+#msg {
+    width: 70%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#send {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+/* ユーザー（右側） */
+
+.user {
+    background-color: #cce5ff;
+    align-self: flex-end;
+    text-align: right;
+    border-bottom-right-radius: 0;
+}
+/* ボット（左側） */
+
+.bot {
+    background-color: lightgreen;
+    align-self: flex-start;
+    text-align: left;
+    border-bottom-left-radius: 0;
+}
+
+.user, .bot {
+    margin-bottom: 10px;
+}
